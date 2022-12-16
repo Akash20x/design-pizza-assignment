@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+<main>
+    <h1>Design Pizza</h1>
+    <div class="empty-circle-container">
+        <div class="empty-circle" id="getData" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/empty-circle.png"  alt="Empty Circle Image" />
+        </div>
+    </div>
+
+    <div class="base-container">
+        <h2>Choose Pizza Base</h2>
+        <div class="items-list">
+            <figure>
+                <figcaption >Thin Crust</figcaption>
+                <img 
+                    id="base1" 
+                    draggable="true" 
+                    ondragstart="drag(event)" 
+                    src="images/thin-crust-base.png" 
+                    alt="Thin Crust Pizza Base"
+                >
+            </figure>
+            <figure>
+                <figcaption>Stuffed Crust</figcaption>
+                <img 
+                    id="base2" 
+                    draggable="true" 
+                    ondragstart="drag(event)" 
+                    src="images/stuffed-crust-pizza.png" 
+                    alt="Stuffed Crust Pizza Base"
+                >
+            </figure>
+            </div>
+    </div>
+
+    <div class="toppings-container none">
+        <h2>Choose Pizza Toppings</h2>
+        <div class="items-list">
+            <figure>
+                <figcaption>Onion</figcaption>
+                <img 
+                    id="topping1" 
+                    draggable="true" 
+                    ondragstart="drag(event)" 
+                    src="images/onions-topping.png" 
+                    alt="Onion Topping"
+                >
+            </figure>
+            <figure>
+                <figcaption>Tomato</figcaption>
+                <img 
+                    id="topping2" 
+                    draggable="true" 
+                    ondragstart="drag(event)" 
+                    src="images/tomato-topping.png" 
+                    alt="Tomato Topping"
+                >
+            </figure>
+            <figure>
+                <figcaption>Capsicum</figcaption>
+                <img 
+                    id="topping3" 
+                    draggable="true" 
+                    ondragstart="drag(event)" 
+                    src="images/capsicum-topping.png" 
+                    alt="Capsicum Topping"
+                >
+            </figure>
+            </div>
+    </div>
+</main> 
+</body>
+</html>
